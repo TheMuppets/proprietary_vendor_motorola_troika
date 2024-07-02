@@ -6,10 +6,10 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),troika)
 
-$(call add-radio-file-sha1-checked,radio/bootloader.img,33051bd4fa247d809dca0bbc11af50c7a90c8717)
-$(call add-radio-file-sha1-checked,radio/keystorage.img,73c3816c898cddc9141757230c106eb856d5d873)
-$(call add-radio-file-sha1-checked,radio/ldfw.img,67fd01bf0a2d4ea63c24acc1061a52ce3676c42c)
-$(call add-radio-file-sha1-checked,radio/logo.img,5d28da59122b2f87a745f11b4a334586e396bfba)
-$(call add-radio-file-sha1-checked,radio/modem.img,b88320e9e08691a6f77e1fe1d3abbe5d0961267f)
+$(call add-radio-file-sha1-checked,radio/bootloader.img,bef146887043c45b7b8411927916fad6e53a0b78)
+$(call add-radio-file-sha1-checked,radio/keystorage.img,95b526b0f76cbece685da095cbb1c2046bbbd6f9)
+$(call add-radio-file-sha1-checked,radio/ldfw.img,597eadf669d4c5a291398142ae7aad4d181e1924)
+$(call add-radio-file-sha1-checked,radio/logo.img,639165f114baf467abaf49300280e4efe2c5dc7c)
+$(call add-radio-file-sha1-checked,radio/modem.img,bab5df9fa9fb311e5ee7ec3957c172a571feac73)
 
 endif
