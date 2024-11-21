@@ -6,9 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/troika
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/troika/proprietary/vendor/bin/cbd:$(TARGET_COPY_OUT_VENDOR)/bin/cbd \
-    vendor/motorola/troika/proprietary/vendor/bin/hw/rild_exynos:$(TARGET_COPY_OUT_VENDOR)/bin/hw/rild_exynos \
-    vendor/motorola/troika/proprietary/vendor/bin/main_abox:$(TARGET_COPY_OUT_VENDOR)/bin/main_abox \
     vendor/motorola/troika/proprietary/vendor/etc/ap_gain_mmul.bin:$(TARGET_COPY_OUT_VENDOR)/etc/ap_gain_mmul.bin \
     vendor/motorola/troika/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/motorola/troika/proprietary/vendor/etc/sec_s3nrn81_rfreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sec_s3nrn81_rfreg.bin \
@@ -29,55 +26,38 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/troika/proprietary/vendor/firmware/setfile_12a10.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_12a10.bin \
     vendor/motorola/troika/proprietary/vendor/firmware/setfile_12a10ff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_12a10ff.bin \
     vendor/motorola/troika/proprietary/vendor/firmware/setfile_16885c.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_16885c.bin \
-    vendor/motorola/troika/proprietary/vendor/firmware/setfile_5e9_troika.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_5e9_troika.bin \
-    vendor/motorola/troika/proprietary/vendor/lib/hw/audio.primary.exynos9610.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.exynos9610.so \
-    vendor/motorola/troika/proprietary/vendor/lib/hw/camera.exynos9610.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.exynos9610.so \
-    vendor/motorola/troika/proprietary/vendor/lib/hw/sensors.troika_sprout.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.troika_sprout.so \
-    vendor/motorola/troika/proprietary/vendor/lib/libalsautils_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils_sec.so \
-    vendor/motorola/troika/proprietary/vendor/lib/libaudio-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio-ril.so \
-    vendor/motorola/troika/proprietary/vendor/lib/libaudioproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioproxy.so \
-    vendor/motorola/troika/proprietary/vendor/lib/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdapparamstorage.so \
-    vendor/motorola/troika/proprietary/vendor/lib/libexynoscamera3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynoscamera3.so \
-    vendor/motorola/troika/proprietary/vendor/lib/libhwjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwjpeg.so \
-    vendor/motorola/troika/proprietary/vendor/lib/libmotaudioutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmotaudioutils.so \
-    vendor/motorola/troika/proprietary/vendor/lib/libril_sitril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril_sitril.so \
-    vendor/motorola/troika/proprietary/vendor/lib/libsitril-audio.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsitril-audio.so \
-    vendor/motorola/troika/proprietary/vendor/lib/libsitril-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsitril-client.so \
-    vendor/motorola/troika/proprietary/vendor/lib/libsitril-gps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsitril-gps.so \
-    vendor/motorola/troika/proprietary/vendor/lib/libsitril-ims.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsitril-ims.so \
-    vendor/motorola/troika/proprietary/vendor/lib/libsitril-nr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsitril-nr.so \
-    vendor/motorola/troika/proprietary/vendor/lib/libsitril-psensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsitril-psensor.so \
-    vendor/motorola/troika/proprietary/vendor/lib/libsitril-sar.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsitril-sar.so \
-    vendor/motorola/troika/proprietary/vendor/lib/libsitril-se.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsitril-se.so \
-    vendor/motorola/troika/proprietary/vendor/lib/libsitril-wlan.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsitril-wlan.so \
-    vendor/motorola/troika/proprietary/vendor/lib/libsitril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsitril.so \
-    vendor/motorola/troika/proprietary/vendor/lib/libunshorten.so:$(TARGET_COPY_OUT_VENDOR)/lib/libunshorten.so \
-    vendor/motorola/troika/proprietary/vendor/lib/sensors.chub.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.chub.so \
-    vendor/motorola/troika/proprietary/vendor/lib/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so \
-    vendor/motorola/troika/proprietary/vendor/lib/vendor.samsung_slsi.telephony.hardware.radio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung_slsi.telephony.hardware.radio@1.0.so \
-    vendor/motorola/troika/proprietary/vendor/lib/vendor.samsung_slsi.telephony.hardware.radio@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung_slsi.telephony.hardware.radio@1.1.so \
-    vendor/motorola/troika/proprietary/vendor/lib/vendor.samsung_slsi.telephony.hardware.radioExternal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung_slsi.telephony.hardware.radioExternal@1.0.so \
-    vendor/motorola/troika/proprietary/vendor/lib/vendor.samsung_slsi.telephony.hardware.radioExternal@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung_slsi.telephony.hardware.radioExternal@1.1.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/hw/camera.exynos9610.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.exynos9610.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/hw/sensors.troika_sprout.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.troika_sprout.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/libadropbox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadropbox.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdapparamstorage.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/libexynoscamera3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynoscamera3.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/libhwjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwjpeg.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/libril_sitril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril_sitril.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/libsitril-audio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsitril-audio.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/libsitril-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsitril-client.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/libsitril-gps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsitril-gps.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/libsitril-ims.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsitril-ims.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/libsitril-nr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsitril-nr.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/libsitril-psensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsitril-psensor.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/libsitril-sar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsitril-sar.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/libsitril-se.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsitril-se.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/libsitril-wlan.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsitril-wlan.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/libsitril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsitril.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/sensors.chub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.chub.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/vendor.samsung_slsi.telephony.hardware.radio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.telephony.hardware.radio@1.0.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/vendor.samsung_slsi.telephony.hardware.radio@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.telephony.hardware.radio@1.1.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/vendor.samsung_slsi.telephony.hardware.radioExternal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.telephony.hardware.radioExternal@1.0.so \
-    vendor/motorola/troika/proprietary/vendor/lib64/vendor.samsung_slsi.telephony.hardware.radioExternal@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.telephony.hardware.radioExternal@1.1.so
+    vendor/motorola/troika/proprietary/vendor/firmware/setfile_5e9_troika.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_5e9_troika.bin
+
+PRODUCT_PACKAGES += \
+    camera.exynos9610 \
+    sensors.troika_sprout \
+    libdapparamstorage \
+    libexynoscamera3 \
+    libhwjpeg_vendor \
+    libril_sitril \
+    libsitril-audio \
+    libsitril-client \
+    libsitril-gps \
+    libsitril-ims \
+    libsitril-nr \
+    libsitril-psensor \
+    libsitril-sar \
+    libsitril-se \
+    libsitril-wlan \
+    libsitril \
+    sensors.chub \
+    vendor.samsung_slsi.telephony.hardware.oemservice@1.0 \
+    vendor.samsung_slsi.telephony.hardware.radio@1.0 \
+    vendor.samsung_slsi.telephony.hardware.radio@1.1 \
+    vendor.samsung_slsi.telephony.hardware.radioExternal@1.0 \
+    vendor.samsung_slsi.telephony.hardware.radioExternal@1.1 \
+    audio.primary.exynos9610 \
+    libalsautils_sec \
+    libaudio-ril \
+    libaudioproxy \
+    libmotaudioutils \
+    libunshorten \
+    libadropbox \
+    cbd \
+    rild_exynos \
+    main_abox
