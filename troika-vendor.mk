@@ -6,10 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/troika
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/troika/proprietary/vendor/etc/ap_gain_mmul.bin:$(TARGET_COPY_OUT_VENDOR)/etc/ap_gain_mmul.bin \
-    vendor/motorola/troika/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/motorola/troika/proprietary/vendor/etc/sec_s3nrn81_rfreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sec_s3nrn81_rfreg.bin \
-    vendor/motorola/troika/proprietary/vendor/etc/sim_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sim_configuration.xml \
     vendor/motorola/troika/proprietary/vendor/firmware/fimc_is_lib.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fimc_is_lib.bin \
     vendor/motorola/troika/proprietary/vendor/firmware/fimc_is_rta.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fimc_is_rta.bin \
     vendor/motorola/troika/proprietary/vendor/firmware/himax-hix83112a-hx83112a-0C00-208-troika.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/himax-hix83112a-hx83112a-0C00-208-troika.bin \
@@ -31,33 +28,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     camera.exynos9610 \
     sensors.troika_sprout \
-    libdapparamstorage \
     libexynoscamera3 \
     libhwjpeg_vendor \
-    libril_sitril \
-    libsitril-audio \
-    libsitril-client \
-    libsitril-gps \
-    libsitril-ims \
-    libsitril-nr \
-    libsitril-psensor \
-    libsitril-sar \
-    libsitril-se \
-    libsitril-wlan \
-    libsitril \
-    sensors.chub \
-    vendor.samsung_slsi.telephony.hardware.oemservice@1.0 \
-    vendor.samsung_slsi.telephony.hardware.radio@1.0 \
-    vendor.samsung_slsi.telephony.hardware.radio@1.1 \
-    vendor.samsung_slsi.telephony.hardware.radioExternal@1.0 \
-    vendor.samsung_slsi.telephony.hardware.radioExternal@1.1 \
-    audio.primary.exynos9610 \
-    libalsautils_sec \
-    libaudio-ril \
-    libaudioproxy \
-    libmotaudioutils \
-    libunshorten \
-    libadropbox \
-    cbd \
-    rild_exynos \
-    main_abox
+    sensors.chub
