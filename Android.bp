@@ -136,6 +136,7 @@ cc_prebuilt_library_shared {
                 "libcsc",
                 "android.hardware.graphics.allocator@2.0",
                 "android.hardware.graphics.mapper@2.0",
+                "libGrallocWrapper",
                 "libexynoscamera_vdis_plugin",
                 "libexynoscamera_hifills_plugin",
                 "libexynoscamera_hifi_plugin",
@@ -166,6 +167,7 @@ cc_prebuilt_library_shared {
                 "libcsc",
                 "android.hardware.graphics.allocator@2.0",
                 "android.hardware.graphics.mapper@2.0",
+                "libGrallocWrapper",
                 "libexynoscamera_vdis_plugin",
                 "libexynoscamera_hifills_plugin",
                 "libexynoscamera_hifi_plugin",
@@ -180,7 +182,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
