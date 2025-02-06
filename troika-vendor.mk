@@ -26,7 +26,5 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/troika/proprietary/vendor/firmware/setfile_5e9_troika.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_5e9_troika.bin
 
 PRODUCT_PACKAGES += \
-    camera.exynos9610 \
     sensors.troika_sprout \
-    libexynoscamera3 \
     sensors.chub
